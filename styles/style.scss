@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import './variables';
+@import './nav';
+@import './header';
+@import './form';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(../assets/background1.jpg);
+    background-position: 25%;
+    background-size: contain 100%;
+    background-repeat: no-repeat;
+    background-color: $green;
+    color: $darkGreen;
+    font-family: 'Roboto', sans-serif;
+}
+
+button {
+    border: 1px solid $paleGreen;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1em;
+}

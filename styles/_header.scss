@@ -1,0 +1,54 @@
+@import 'variables';
+
+h1 { 
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 36px;
+    font-weight: 500;
+    color: $white;
+}
+
+#tagline {
+    margin-bottom: 1em;
+    line-height: 1.25em;
+    color: $white;
+    font-weight: 300;
+    font-size: 16px;
+    & span {
+        display: block;
+        padding: 2rem;
+        font-family: 'Kaushan Script', cursive;
+        font-size: 70px;
+        text-align: center;
+        color: $white;
+    }
+}
+
+
+
+
+
+
+/*
+@mixin flexCenter($direction, $background) {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+    background: $background;
+}
+
+header {
+
+    @include flexCenter(column, red);
+
+    background: lightblue;
+    button {
+        background: $primaryBtn;
+        &:hover {
+            background: red;
+        }
+    }
+}
+*/

@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+nav {
+  display: block;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 1em;
+}
+
+nav a {
+  color: #f9fff7;
+}
+
+#logo {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 1.3em;
+}
+
+#logo span {
+  font-size: .9em;
+}
+
+.icon {
+  float: right;
+}
+
+#nav-links {
+  display: none;
+  width: 100%;
+}
+
+#nav-links li {
+  display: block;
+  font-weight: 300;
+  font-size: 14px;
+  padding-top: 1em;
+}
+
+#nav-links li a {
+  color: #f9fff7;
+}
+
+#nav-links li a:hover {
+  color: #cbc085;
+}
+
+i {
+  color: #f9fff7;
+  font-size: 1.5rem;
+}
+
+.scrolled {
+  color: #f9fff7;
+  background-color: #6c7904;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-size: 36px;
+  font-weight: 500;
+  color: #f9fff7;
+}
+
+#tagline {
+  margin-bottom: 1em;
+  line-height: 1.25em;
+  color: #f9fff7;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+#tagline span {
+  display: block;
+  padding: 2rem;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 70px;
+  text-align: center;
+  color: #f9fff7;
+}
+
+/*
+@mixin flexCenter($direction, $background) {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+    background: $background;
+}
+
+header {
+
+    @include flexCenter(column, red);
+
+    background: lightblue;
+    button {
+        background: $primaryBtn;
+        &:hover {
+            background: red;
+        }
+    }
+}
+*/
+.registration-login-form {
+  background-color: #f9fff7;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.form-tabs {
+  display: block;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tab-links {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 6em;
+  background-color: #ebf3ec;
+  color: rgba(29, 49, 16, 0.3);
+  font-weight: 900;
+}
+
+.form-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 1em;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.content input {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 3em;
+  border-radius: 5px;
+  border: 1px solid #d5e5d7;
+  background-color: #f9fff7;
+  padding-left: 1em;
+}
+
+.content label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+}
+
+.content label span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content a {
+  padding-left: 3px;
+  color: #6c7904;
+}
+
+.content #forgot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content .formBtn {
+  background-color: #6c7904;
+  color: #f9fff7;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.content .formBtn:hover {
+  background-color: #829205;
+}
+
+input[type='checkbox'] {
+  -webkit-box-flex: 0;
+      -ms-flex: 0;
+          flex: 0;
+  margin-right: 0.5em;
+}
+
+.active {
+  display: block;
+  background-color: #f9fff7;
+  color: #1d3110;
+}
+
+#login {
+  display: none;
+}
+
+#toReg {
+  color: #6c7904;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url(../assets/background1.jpg);
+  background-position: 25%;
+  background-size: contain 100%;
+  background-repeat: no-repeat;
+  background-color: #6c7904;
+  color: #1d3110;
+  font-family: 'Roboto', sans-serif;
+}
+
+button {
+  border: 1px solid #d5e5d7;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1em;
+}
+/*# sourceMappingURL=style.css.map */

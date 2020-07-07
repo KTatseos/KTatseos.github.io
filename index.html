@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://kit.fontawesome.com/32bceee90f.js" crossorigin="anonymous"></script>
+    <title>Bewitched</title>
+</head>
+<body>
+    <nav id="nav">
+        <a id="logo" href="index.html"><i class="fas fa-moon"></i> <span>Bewitched</span></a>
+        <a href="javascript:void(0);" class="icon" onclick="openNav()">
+            <i class="fas fa-bars"></i>
+        </a>
+        <ul id="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="garden.html">Garden</a></li>
+            <li><a href="#">Stats</a></li>
+            <li><a href="#">Shop</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+    <header>
+        <h1>Embrace your witchy self!</h1>
+        <p id="tagline">
+            </br><em>"Double, double toil and trouble; Fire burn and cauldron bubble."</em></br></br>
+            ...That's so old school, isn't it? Us modern-day witches want just one thing: a simple life of growth.
+            Welcome home to a place where you can do exactly that. Enchant your surroundings into a magical garden, 
+            and tend to everything with a gifted hand. From your smallest sprout to your most powerful man-eating plant, 
+            caring for your sanctuary will send you into the state you desire most:</br></br>
+            <span>Bewitched</span>
+        </p>
+    </header>
+    
+        <!-- Login/Registration Form -->
+        <div class="registration-login-form">
+            <!-- Form tabs -->
+            <ul class="form-tabs">
+                <button class="tab-links active" id="register-tab" onclick="openTab(event, 'registration')">Register</button>
+                <button class="tab-links" id="login-tab" onclick="openTab(event, 'login')">Login</button>
+            </ul>
+            <!-- Form content -->
+            <div class="form-content">
+                <div id="registration" class="tab-content">
+                    <form action="" class="content">
+                        <div class="content">
+                            <input type="text" name="name" id="name" placeholder="Name" required>
+                        </div>
+                        <div class="content">
+                            <input type="email" name="email" id="email" placeholder="Email" required>
+                        </div>
+                        <div class="content">
+                            <input type="password" name="password" id="password" placeholder="Password" required>
+                        </div>
+                        <div class="content">
+                            <label>
+                                <input type="checkbox" name="tos">
+                                I accept the <a href="#">Terms and Conditions</a>
+                            </label>
+                        </div>
+                        <div class="content">
+                            <input class="formBtn" type="submit" value="Register now!">
+                        </div>
+                    </form>
+                </div>
+                <div id="login" class="tab-content">
+                    <form action="" class="content">
+                        <div class="content">
+                            <input type="email" name="email" id="email" placeholder="Email" required>
+                        </div>
+                        <div class="content">
+                            <input type="password" name="password" id="password" placeholder="Password" required>
+                        </div>
+                        <div class="content">
+                            <label id="forgot">
+                                <p><span><input type="checkbox" name="remember">Remember me</span></p>
+                                <a href="#">Forgot password?</a>
+                            </label>
+                        </div>
+                        <div class="content">
+                            <input class="formBtn" type="submit" value="Login">
+                        </div>
+                        <p class="content">Don't have an account? <a href="javascript:void(0);" id="toReg" onclick="openTab(event, 'registration')">Register now!</a></p>
+                    </form>
+                </div>
+            </div>
+        </div> <!-- End Login/Registration Form -->
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>

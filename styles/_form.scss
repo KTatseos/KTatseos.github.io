@@ -1,0 +1,101 @@
+@import 'variables';
+
+.registration-login-form {
+    background-color: $white;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.form-tabs {
+    display: block;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab-links {
+    flex-grow: 1;
+    height: 6em;
+    background-color: lighten($paleGreen, 7%);
+    color: transparentize($darkGreen, 0.7);
+    font-weight: 900;
+}
+
+.form-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex: 0 0 100%;
+    flex-wrap: wrap;
+    padding: 1em;
+    flex-grow: 1;
+
+    font-weight: 300;
+    font-size: 12px;
+
+    & input {
+        flex-grow: 1;
+        height: 3em;
+        border-radius: 5px;
+        border: 1px solid $paleGreen;
+        background-color: $white;
+        padding-left: 1em;   
+    }
+
+    & label {
+        display: flex;
+        align-items: center;
+        flex: 0 0 100%;
+
+        & span {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    & a {
+        padding-left: 3px;
+        color: $green;
+    }
+
+    & #forgot {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    & .formBtn {
+        background-color: $green;
+        color: $white;
+        font-size: 16px;
+        font-weight: 900;
+
+        &:hover {
+            background-color: lighten($green, 5%);
+        }
+    }
+}
+
+input[type='checkbox'] {
+    flex: 0;
+    margin-right: 0.5em;
+}
+
+.active {
+    display: block;
+    background-color: $white;
+    color: transparentize($darkGreen, 0);
+}
+
+#login {
+    display: none;
+}
+
+#toReg {
+    color: $green;
+}
