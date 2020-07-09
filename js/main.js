@@ -14,7 +14,7 @@ const scrollFunction = () => {
         nav.classList.remove("nav-visible");
         navLinks.classList.remove("nav-visible");
         logo.classList.remove("nav-visible");
-        if (navLinks.style.visibility === "visible") {
+        if (navLinks.style.transform === "translateY(0%)") {
             navLinks.classList.add("nav-visible");
             nav.classList.add("nav-visible");
         }
@@ -55,6 +55,7 @@ const toggleNav = () => {
 
     if (navLinks.style.transform === "translateY(0%)") {
         navLinks.style.transform = "translateY(-200%)";
+        nav.classList.add("nav-visible");
         
     } else {
         navLinks.style.transform = "translateY(0%)";
