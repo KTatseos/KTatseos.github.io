@@ -184,8 +184,8 @@ header {
   border: 1px solid #d5e5d7;
   background-color: #f9fff7;
   padding-left: 1em;
-  -webkit-transition: border 0.5s;
-  transition: border 0.5s;
+  -webkit-transition: border 0.25s;
+  transition: border 0.25s;
 }
 
 .content input:focus {
