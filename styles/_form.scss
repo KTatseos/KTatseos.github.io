@@ -46,6 +46,11 @@
         border: 1px solid $paleGreen;
         background-color: $white;
         padding-left: 1em;   
+        transition: border 0.5s;
+
+        &:focus {
+            border: 1px solid $green;
+        }
     }
 
     & label {
@@ -74,6 +79,7 @@
         color: $white;
         font-size: 16px;
         font-weight: 900;
+        transition: background-color 0.25s;
 
         &:hover {
             background-color: lighten($green, 5%);
@@ -90,6 +96,8 @@ input[type='checkbox'] {
     display: block;
     background-color: $white;
     color: transparentize($darkGreen, 0);
+    transition: background-color .5s;
+    transition-timing-function: ease;
 }
 
 #login {
@@ -98,4 +106,14 @@ input[type='checkbox'] {
 
 #toReg {
     color: $green;
+}
+
+.hide {
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
 }

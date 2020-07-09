@@ -6,6 +6,7 @@ nav {
   position: sticky;
   top: 0;
   padding: 1em;
+  z-index: 1;
 }
 
 nav a {
@@ -32,6 +33,7 @@ nav a {
   padding: 1em;
   position: absolute;
   background-color: #6c7904;
+  z-index: -1;
   -webkit-transition: -webkit-transform .5s;
   transition: -webkit-transform .5s;
   transition: transform .5s;
@@ -182,6 +184,12 @@ header {
   border: 1px solid #d5e5d7;
   background-color: #f9fff7;
   padding-left: 1em;
+  -webkit-transition: border 0.5s;
+  transition: border 0.5s;
+}
+
+.content input:focus {
+  border: 1px solid #6c7904;
 }
 
 .content label {
@@ -224,6 +232,8 @@ header {
   color: #f9fff7;
   font-size: 16px;
   font-weight: 900;
+  -webkit-transition: background-color 0.25s;
+  transition: background-color 0.25s;
 }
 
 .content .formBtn:hover {
@@ -241,6 +251,10 @@ input[type='checkbox'] {
   display: block;
   background-color: #f9fff7;
   color: #1d3110;
+  -webkit-transition: background-color .5s;
+  transition: background-color .5s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
 }
 
 #login {
@@ -249,6 +263,17 @@ input[type='checkbox'] {
 
 #toReg {
   color: #6c7904;
+}
+
+.hide {
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
 * {

@@ -5,10 +5,11 @@ nav {
     position: sticky;
     top: 0;
     padding: 1em;
+    z-index: 1;
+    
     & a {
         color: $white;
     }
-
 }
 
 #logo {
@@ -29,7 +30,11 @@ nav {
     left: 0;
     padding: 1em;
     position: absolute; 
-    background-color: $green;
+    background-color: $green; 
+    z-index: -1;
+    transition: transform .5s;
+    transform: translateY(-200%);
+
     & li {
         display: block;
         font-weight: 300;
@@ -42,9 +47,6 @@ nav {
             }
         }
     }
-
-    transition: transform .5s;
-    transform: translateY(-200%);
 }
 
 i {

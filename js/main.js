@@ -1,7 +1,7 @@
 // Change nav at X pixels
 window.onscroll = function() { scrollFunction() };
 
-function scrollFunction() {
+const scrollFunction = () => {
     let nav = document.getElementById("nav");
     let navLinks = document.getElementById("nav-links");
     let logo = document.getElementById("logo");
@@ -22,7 +22,7 @@ function scrollFunction() {
 }
 
 // Open registration/login tabs on main page
-function openTab(e, tabName) {
+const openTab = (e, tabName) => {
     let i, tabContent, tabLinks;
 
     tabContent = document.getElementsByClassName("tab-content");
