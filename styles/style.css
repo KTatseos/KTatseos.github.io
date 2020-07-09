@@ -26,8 +26,18 @@ nav a {
 }
 
 #nav-links {
-  display: none;
+  display: block;
   width: 100%;
+  left: 0;
+  padding: 1em;
+  position: absolute;
+  background-color: #6c7904;
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+  -webkit-transform: translateY(-200%);
+          transform: translateY(-200%);
 }
 
 #nav-links li {
@@ -50,7 +60,7 @@ i {
   font-size: 1.5rem;
 }
 
-.scrolled {
+.nav-visible {
   color: #f9fff7;
   background-color: #6c7904;
 }
@@ -257,6 +267,7 @@ body {
   background-position: 25%;
   background-size: contain 100%;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-color: #6c7904;
   color: #1d3110;
   font-family: 'Roboto', sans-serif;

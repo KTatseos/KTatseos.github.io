@@ -2,26 +2,24 @@
 window.onscroll = function() { scrollFunction() };
 
 function scrollFunction() {
-    let i;
     let nav = document.getElementById("nav");
+    let navLinks = document.getElementById("nav-links");
     let logo = document.getElementById("logo");
-    let fas = document.getElementsByClassName("fas");
 
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        for (i = 0; i < fas.length; i++) {
-            fas[i].classList.add("scrolled");
+    if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+        navLinks.classList.add("nav-visible");
+        logo.classList.add("nav-visible");
+        nav.classList.add("nav-visible");
+    } else {        
+        nav.classList.remove("nav-visible");
+        navLinks.classList.remove("nav-visible");
+        logo.classList.remove("nav-visible");
+        if (navLinks.style.visibility === "visible") {
+            navLinks.classList.add("nav-visible");
+            nav.classList.add("nav-visible");
         }
-        nav.classList.add("scrolled");
-        logo.classList.add("scrolled");
-    } else {
-        for (i = 0; i < fas.length; i++) {
-            fas[i].classList.remove("scrolled");
-        }
-        nav.classList.remove("scrolled");
-        logo.classList.remove("scrolled");
     }
-} 
-
+}
 
 // Open registration/login tabs on main page
 function openTab(e, tabName) {
@@ -50,15 +48,19 @@ function openTab(e, tabName) {
     }
 }
 
-// Open nav
-function openNav() {
-    var navLinks = document.getElementById("nav-links");
+// Toggle nav bar to slide down/up
+const toggleNav = () => {
+    const nav = document.getElementById("nav");
+    const navLinks = document.getElementById("nav-links");
 
-    if (navLinks.style.display === "block") {
-        navLinks.style.display = "none";
+    if (navLinks.style.transform === "translateY(0%)") {
+        navLinks.style.transform = "translateY(-200%)";
+        
     } else {
-        navLinks.style.display = "block";
+        navLinks.style.transform = "translateY(0%)";
+        nav.classList.add("nav-visible");
     }
 }
 
+document.getElementById('hamburger').addEventListener('click', toggleNav)
 
