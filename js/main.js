@@ -1,4 +1,4 @@
-// Change nav at X pixels
+// Change nav at 30
 window.onscroll = function() { scrollFunction() };
 
 const scrollFunction = () => {
@@ -63,5 +63,4 @@ const toggleNav = () => {
     }
 }
 
-document.getElementById('hamburger').addEventListener('click', toggleNav)
-
+document.getElementById('hamburger').addEventListener('click', toggleNav);

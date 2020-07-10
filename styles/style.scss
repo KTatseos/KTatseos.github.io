@@ -43,4 +43,12 @@ li {
     max-width: 960px;
     margin: 0 auto;
     padding: 1em;
+
+    @media (min-width: $breakpoint-lg) {
+        display: flex;
+        justify-content: space-between; 
+        max-width: 100%;
+        padding: 5em;   
+    }
 }
+

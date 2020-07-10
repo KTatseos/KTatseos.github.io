@@ -1,28 +1,46 @@
 @import 'variables';
 
-h1 { 
-    font-family: 'Roboto', sans-serif;
-    font-style: italic;
-    font-size: 36px;
-    font-weight: 500;
-    color: $white;
-}
-
-#tagline {
-    margin-bottom: 1em;
-    line-height: 1.25em;
-    color: $white;
-    font-weight: 300;
-    font-size: 16px;
-    & span {
-        display: block;
-        padding: 2rem;
-        font-family: 'Kaushan Script', cursive;
-        font-size: 70px;
-        text-align: center;
+header {
+    h1 { 
+        font-family: 'Roboto', sans-serif;
+        font-style: italic;
+        font-size: 34px;
+        font-weight: 500;
         color: $white;
+
+        @media (min-width: $breakpoint-lg) {
+            font-size: 44px;
+        }
+    }
+    
+    #tagline {
+        margin-bottom: 1em;
+        line-height: 1.25em;
+        color: $white;
+        font-weight: 300;
+        font-size: 16px;
+
+        span {
+            display: block;
+            padding: 2rem;
+            font-family: 'Kaushan Script', cursive;
+            font-size: 70px;
+            text-align: center;
+            color: $white;
+
+            @media (min-width: $breakpoint-lg) {
+                align-items: flex-end;
+                font-size: 100px;
+                padding: 4rem;
+            }
+        }
+    } 
+    
+    @media (min-width: $breakpoint-lg) {
+        flex-basis: 50%;
     }
 }
+
 
 
 

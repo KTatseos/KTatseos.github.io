@@ -67,15 +67,21 @@ i {
   background-color: #6c7904;
 }
 
-h1 {
+header h1 {
   font-family: 'Roboto', sans-serif;
   font-style: italic;
-  font-size: 36px;
+  font-size: 34px;
   font-weight: 500;
   color: #f9fff7;
 }
 
-#tagline {
+@media (min-width: 1024px) {
+  header h1 {
+    font-size: 44px;
+  }
+}
+
+header #tagline {
   margin-bottom: 1em;
   line-height: 1.25em;
   color: #f9fff7;
@@ -83,13 +89,30 @@ h1 {
   font-size: 16px;
 }
 
-#tagline span {
+header #tagline span {
   display: block;
   padding: 2rem;
   font-family: 'Kaushan Script', cursive;
   font-size: 70px;
   text-align: center;
   color: #f9fff7;
+}
+
+@media (min-width: 1024px) {
+  header #tagline span {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    font-size: 100px;
+    padding: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
 }
 
 /*
@@ -121,6 +144,16 @@ header {
   overflow: hidden;
 }
 
+@media (min-width: 1024px) {
+  .registration-login-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+  }
+}
+
 .form-tabs {
   display: block;
   height: 100%;
@@ -135,6 +168,29 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .form-tabs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  .form-tabs #rotate {
+    display: block;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
 }
 
 .tab-links {
@@ -314,5 +370,18 @@ li {
   max-width: 960px;
   margin: 0 auto;
   padding: 1em;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 100%;
+    padding: 5em;
+  }
 }
 /*# sourceMappingURL=style.css.map */

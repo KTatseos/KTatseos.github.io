@@ -7,7 +7,7 @@ nav {
     padding: 1em;
     z-index: 1;
     
-    & a {
+    a {
         color: $white;
     }
 }
@@ -15,7 +15,7 @@ nav {
 #logo {
     font-family: 'Kaushan Script', cursive;
     font-size: 1.3em;
-    & span {
+    span {
         font-size: .9em;
     }
 }
@@ -35,12 +35,12 @@ nav {
     transition: transform .5s;
     transform: translateY(-200%);
 
-    & li {
+    li {
         display: block;
         font-weight: 300;
         font-size: 14px;
         padding-top: 1em;
-        & a {
+        a {
             color: $white;
             &:hover {
                 color: $lightGreen;

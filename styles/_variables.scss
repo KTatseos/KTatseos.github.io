@@ -8,3 +8,34 @@ $white : #f9fff7;
 
 // Font sizes: 12, 14, 16px
 // Font weights: 300, 500, 900
+
+// Breakpoints
+$breakpoint-sm : 640px;
+$breakpoint-med : 768px;
+$breakpoint-lg : 1024px;
+$breakpoint-xl : 1200px;
+
+
+
+// @mixin respond-to($media) {
+//     @if $media == handhelds {
+//       @media only screen and (max-width: 320px) { @content; }
+//     }
+//     @else if $media == medium-screens {
+//       @media only screen and (min-width: 321px) and (max-width: 1024px) { @content; }
+//     }
+//     @else if $media == wide-screens {
+//       @media only screen and (min-width: 1024px) { @content; }
+//     }
+//   }
+  
+//   .profile-pic {
+//     float: left;
+//     width: 250px;
+//     @include respond-to(handhelds) { width: 100% ;}
+//     @include respond-to(medium-screens) { width: 125px; }
+//     @include respond-to(wide-screens) { float: none; }
+//   }
+
+
+// Background photo by Dua Chuot from Pexels
